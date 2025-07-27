@@ -1,0 +1,12 @@
+[submodule "Gaja-Client"]
+	path = Gaja-Client
+	url = https://github.com/TymekTM/Gaja-Client
+[submodule "Gaja-Server"]
+	path = Gaja-Server
+	url = https://github.com/TymekTM/Gaja-server
+[submodule "Gaja-Web"]
+	path = Gaja-Web
+	url = https://github.com/TymekTM/Gaja-Web
+[submodule "Gaja-Overlay"]
+	path = Gaja-Overlay
+	url = https://github.com/TymekTM/Gaja-Overlay
