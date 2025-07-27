@@ -1,9 +1,9 @@
 [submodule "Gaja-Client"]
 	path = Gaja-Client
-	url = https://github.com/TymekTM/Gaja-Client
-[submodule "Gaja-Server"]
-	path = Gaja-Server
-	url = https://github.com/TymekTM/Gaja-server
+	url = https://github.com/TymekTM/Gaja-Client.git
+[submodule "Gaja-server"]
+	path = Gaja-server
+	url = https://github.com/TymekTM/Gaja-server.git
 [submodule "Gaja-Web"]
 	path = Gaja-Web
 	url = https://github.com/TymekTM/Gaja-Web
