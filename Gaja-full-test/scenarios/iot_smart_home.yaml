@@ -1,0 +1,34 @@
+meta:
+  name: "IoT Smart Home control"
+  tags: ["iot", "smart_home", "automation"]
+
+steps:
+  - type: "text"
+    message: "Włącz światło w salonie"
+    expect:
+      action: "smart_home_control"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "światło"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Ustaw temperaturę na 22 stopnie"
+    expect:
+      action: "thermostat_control"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "22"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Pokaż status wszystkich urządzeń"
+    expect:
+      action: "device_status"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "urządzeń"
+        - kind: "semantic_ok"

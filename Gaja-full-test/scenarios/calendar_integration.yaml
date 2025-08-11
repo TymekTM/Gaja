@@ -1,0 +1,35 @@
+meta:
+  name: "Calendar integration"
+  tags: ["calendar", "integration", "scheduling"]
+
+steps:
+  - type: "text"
+    message: "Dodaj wydarzenie: Spotkanie projektowe jutro o 15:00"
+    expect:
+      action: "calendar_add"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "dodałem"
+        - kind: "effect_ok"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Jakie mam spotkania w tym tygodniu?"
+    expect:
+      action: "calendar_query"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "spotkanie"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Przesuń spotkanie projektowe na 16:00"
+    expect:
+      action: "calendar_update"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "przesuń"
+        - kind: "semantic_ok"

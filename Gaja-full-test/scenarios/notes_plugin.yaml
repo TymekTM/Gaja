@@ -1,0 +1,34 @@
+meta:
+  name: "Notes plugin functionality"
+  tags: ["notes", "plugin", "memory"]
+
+steps:
+  - type: "text"
+    message: "Zapisz notatkę: pomysł na nową funkcję w aplikacji - dark mode dla wszystkich ekranów"
+    expect:
+      action: "note_save"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "zapisałem"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Pokaż mi ostatnie notatki"
+    expect:
+      action: "notes_list"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "notat"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Znajdź notatki związane z aplikacją"
+    expect:
+      action: "notes_search"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "aplikacj"
+        - kind: "semantic_ok"

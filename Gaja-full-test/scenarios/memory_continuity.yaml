@@ -1,0 +1,42 @@
+name: "Memory and Context Continuity Test"
+description: "Test długoterminowej pamięci i ciągłości kontekstu"
+category: "memory"
+expected_behaviors:
+  - "AI pamięta informacje z całej sesji"
+  - "AI buduje na wcześniejszych ustaleniach"
+  - "AI używa informacji kontekstowych inteligentnie"
+  - "AI nie zapomina ważnych szczegółów"
+  - "AI personalizuje odpowiedzi na bazie historii"
+
+steps:
+  - type: "text"
+    message: "Nazywam się Jan Kowalski i pracuję jako Product Manager w firmie TechCorp."
+    expect:
+      - "Zapamiętanie imienia i stanowiska"
+      - "Potwierdzenie zrozumienia informacji"
+    
+  - type: "text"
+    message: "Pracuję nad produktem o nazwie 'SmartApp' - to aplikacja mobilna do zarządzania finansami osobistymi."
+    expect:
+      - "Zapamiętanie nazwy produktu i jego opisu"
+      - "Ewentualne pytania o szczegóły produktu"
+    
+  - type: "text" 
+    message: "Mam problem z zespołem - developer lead ciągle kwestionuje moje decyzje."
+    expect:
+      - "Zrozumienie problemów interpersonalnych"
+      - "Propozycje rozwiązań lub porad"
+    
+  - type: "text"
+    message: "Jak sądzisz, czy powinienem porozmawiać z moim managerem o tej sytuacji?"
+    expect:
+      - "Nawiązanie do wcześniej opisanego problemu"
+      - "Uwzględnienie kontekstu stanowiska (Product Manager)"
+      - "Personalizowana rada"
+    
+  - type: "text"
+    message: "A co sądzisz o rozwoju SmartApp? Czy rynek aplikacji finansowych ma przyszłość?"
+    expect:
+      - "Pamiętanie nazwy produktu z wcześniejszej rozmowy"
+      - "Nawiązanie do branży finansowej"
+      - "Uwzględnienie kontekstu że użytkownik jest PM tego produktu"

@@ -1,0 +1,86 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>GAJA Test Report</title>
+            <meta charset="utf-8">
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .success { color: green; }
+                .error { color: red; }
+                .warning { color: orange; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <h1>🧪 GAJA Test Report</h1>
+            <p><strong>Timestamp:</strong> 2025-08-09 14:09:08</p>
+            <p><strong>Scenariusze:</strong> 0/1 pomyślne</p>
+            
+            <h2>📋 Wyniki scenariuszy</h2>
+            <table>
+                <tr>
+                    <th>Scenariusz</th>
+                    <th>Status</th>
+                    <th>Sukces kroków</th>
+                    <th>Czas</th>
+                </tr>
+        
+                <tr>
+                    <td>Basic Conversation</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>0/3</td>
+                    <td>2025-08-09T14:08:43.674165</td>
+                </tr>
+            
+            </table>
+            
+            <h2>🔧 Szczegóły</h2>
+            <pre id="details"></pre>
+            
+            <script>
+                document.getElementById('details').textContent = JSON.stringify([
+  {
+    "name": "Basic Conversation",
+    "start_time": "2025-08-09T14:08:43.674165",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:08:43.674259",
+        "success": false,
+        "response": null,
+        "error": "RetryError[<Future at 0x1d9141ce190 state=finished raised HTTPStatusError>]",
+        "end_time": "2025-08-09T14:08:51.826526"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:08:51.826772",
+        "success": false,
+        "response": null,
+        "error": "RetryError[<Future at 0x1d9141539b0 state=finished raised HTTPStatusError>]",
+        "end_time": "2025-08-09T14:08:59.993857"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:08:59.994038",
+        "success": false,
+        "response": null,
+        "error": "RetryError[<Future at 0x1d914248d50 state=finished raised HTTPStatusError>]",
+        "end_time": "2025-08-09T14:09:08.146467"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.0,
+    "end_time": "2025-08-09T14:09:08.146895"
+  }
+], null, 2);
+            </script>
+        </body>
+        </html>
+        

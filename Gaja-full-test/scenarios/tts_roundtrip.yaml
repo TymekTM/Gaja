@@ -1,0 +1,24 @@
+meta:
+  name: "Voice roundtrip"
+  tags: ["voice", "whisper", "tts"]
+
+steps:
+  - type: "audio"
+    tts_text: "Cześć Gaja! Jaki jest plan na jutro o dziesiątej?"
+    expect:
+      action: "transcribe_and_answer"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "jutro"
+        - kind: "semantic_ok"
+
+  - type: "audio"  
+    tts_text: "Powiedz mi o pogodzie na dziś"
+    expect:
+      action: "weather_query"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "pogod"
+        - kind: "semantic_ok"

@@ -1,0 +1,24 @@
+meta:
+  name: "Whisper input processing"  
+  tags: ["whisper", "audio", "transcription"]
+
+steps:
+  - type: "audio"
+    tts_text: "Zapisz notatkę: spotkanie z klientem w poniedziałek o piętnastej"
+    expect:
+      action: "note_creation"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "notat"
+        - kind: "semantic_ok"
+
+  - type: "audio"
+    tts_text: "Dodaj przypomnienie na jutro o ósmej rano"
+    expect:
+      action: "reminder_creation"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "przypomnienie"
+        - kind: "semantic_ok"

@@ -1,0 +1,156 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>GAJA Test Report</title>
+            <meta charset="utf-8">
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .success { color: green; }
+                .error { color: red; }
+                .warning { color: orange; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <h1>🧪 GAJA Test Report</h1>
+            <p><strong>Timestamp:</strong> 2025-08-09 15:10:48</p>
+            <p><strong>Scenariusze:</strong> 1/1 pomyślne</p>
+            
+            <h2>📋 Wyniki scenariuszy</h2>
+            <table>
+                <tr>
+                    <th>Scenariusz</th>
+                    <th>Status</th>
+                    <th>Sukces kroków</th>
+                    <th>Czas</th>
+                </tr>
+        
+                <tr>
+                    <td>Advanced Conversation Test</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>5/5</td>
+                    <td>2025-08-09T15:00:31.455989</td>
+                </tr>
+            
+            </table>
+            
+            <h2>🔧 Szczegóły</h2>
+            <pre id="details"></pre>
+            
+            <script>
+                document.getElementById('details').textContent = JSON.stringify([
+  {
+    "name": "Advanced Conversation Test",
+    "start_time": "2025-08-09T15:00:31.455989",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T15:00:31.456116",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Cze\u015b\u0107, Tomek! Fajnie ci\u0119 s\u0142ysze\u0107. Chcesz, \u017cebym przypomnia\u0142a ci o tym spotkaniu albo pomog\u0142a w czym\u015b jeszcze?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754744432.795304
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T15:00:32.798108"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T15:00:32.798183",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Za godzin\u0119 to b\u0119dzie 14:00. Chcia\u0142aby\u015b, \u017cebym ustawi\u0142a przypomnienie na t\u0119 godzin\u0119?\", \"command\": \"\", \"params\": {}, \"function_calls_executed\": true}"
+            },
+            "timestamp": 1754744436.257194
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T15:00:36.259651"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T15:00:36.259756",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"To zale\u017cy, o jakie spotkanie chodzi i z kim b\u0119dziesz si\u0119 spotyka\u0107, ale mo\u017ce warto przygotowa\u0107 kilka pyta\u0144, notatki albo prezentacj\u0119?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754744437.439748
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T15:00:37.441876"
+      },
+      {
+        "step_index": 3,
+        "action": "text",
+        "start_time": "2025-08-09T15:00:37.441974",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Wygl\u0105da na to, \u017ce na dzisiaj nie masz \u017cadnych innych zada\u0144. Mo\u017ce chcesz co\u015b zaplanowa\u0107 lub przypomnie\u0107 sobie o czym\u015b?\", \"command\": \"\", \"params\": {}, \"function_calls_executed\": true}"
+            },
+            "timestamp": 1754744439.568791
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T15:00:39.570849"
+      },
+      {
+        "step_index": 4,
+        "action": "text",
+        "start_time": "2025-08-09T15:00:39.570941",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Jaka lokalizacja Ci\u0119 interesuje?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754744440.353459
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T15:00:40.355529"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "ai_evaluation": null,
+    "success_rate": 1.0,
+    "ai_evaluation_error": "unhashable type: 'dict'",
+    "end_time": "2025-08-09T15:10:48.846328"
+  }
+], null, 2);
+            </script>
+        </body>
+        </html>
+        

@@ -1,0 +1,35 @@
+meta:
+  name: "Advanced Conversation Test"
+  description: "Test zaawansowanej konwersacji z kontekstem i pamięcią"
+  expected_behaviors:
+    - "AI powinno pamiętać wcześniejsze wypowiedzi użytkownika"
+    - "AI powinno zadawać pytania followup gdy potrzebuje więcej informacji"
+    - "AI powinno wykorzystywać dostępne narzędzia (kalendarz, notatki)"
+    - "AI powinno być proaktywne i sugerować dodatkowe akcje"
+    - "Odpowiedzi powinny być spersonalizowane i kontekstowe"
+
+steps:
+  - type: text
+    message: "Cześć! Jestem Tomek, programista. Pracuję zdalnie i mam dziś ważne spotkanie o 15:00."
+
+  - type: text  
+    message: "Czy możesz mi przypomnieć za godzinę o tym spotkaniu? To z klientem o nowym projekcie e-commerce."
+
+  - type: text
+    message: "A tak przy okazji, czy masz jakieś sugestie co powinienem przygotować na to spotkanie?"
+    
+  - type: text
+    message: "Dzięki! Czy możesz też sprawdzić jakie mam inne zadania na dziś?"
+
+  - type: text
+    message: "Sprawdź proszę pogodę - może po spotkaniu pójdę na spacer."
+
+expected_results:
+  - criteria: "context_understanding"
+    description: "AI powinno pamiętać że jestem Tomek, programista, pracuję zdalnie"
+  - criteria: "tool_usage" 
+    description: "AI powinno użyć kalendarza dla przypomnienia i sprawdzania zadań"
+  - criteria: "proactivity"
+    description: "AI powinno zasugerować przygotowania do spotkania e-commerce"
+  - criteria: "memory_usage"
+    description: "AI powinno łączyć informacje z różnych wiadomości"

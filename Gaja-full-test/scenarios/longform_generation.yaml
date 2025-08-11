@@ -1,0 +1,37 @@
+meta:
+  name: "Long-form content generation"
+  tags: ["generation", "long_form", "creativity"]
+
+steps:
+  - type: "text"
+    message: "Napisz mi plan dnia na jutro uwzględniając spotkanie o 10:00, lunch o 13:00 i czas na sport"
+    expect:
+      action: "day_planning"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "10:00"
+        - kind: "contains"
+          target: "assistant_text"
+          value: "13:00"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Stwórz dla mnie listę zadań do zrobienia w tym miesiącu w kontekście rozwoju kariery programisty"
+    expect:
+      action: "task_generation"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "programist"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Przygotuj krótkie streszczenie najważniejszych trendów w IT na 2025 rok"
+    expect:
+      action: "summary_generation"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "2025"
+        - kind: "semantic_ok"

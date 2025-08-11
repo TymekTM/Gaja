@@ -1,0 +1,34 @@
+meta:
+  name: "Web search functionality"
+  tags: ["search", "web", "plugin"]
+
+steps:
+  - type: "text"
+    message: "Wyszukaj najnowsze informacje o sztucznej inteligencji"
+    expect:
+      action: "web_search"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "sztuczn"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Sprawdź pogodę w Warszawie na jutro"
+    expect:
+      action: "weather_search"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "Warszaw"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Znajdź informacje o kursie dolara dziś"
+    expect:
+      action: "currency_search"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "dolar"
+        - kind: "semantic_ok"

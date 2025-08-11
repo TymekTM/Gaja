@@ -1,0 +1,620 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>GAJA Test Report</title>
+            <meta charset="utf-8">
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .success { color: green; }
+                .error { color: red; }
+                .warning { color: orange; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <h1>🧪 GAJA Test Report</h1>
+            <p><strong>Timestamp:</strong> 2025-08-09 14:32:39</p>
+            <p><strong>Scenariusze:</strong> 9/9 pomyślne</p>
+            
+            <h2>📋 Wyniki scenariuszy</h2>
+            <table>
+                <tr>
+                    <th>Scenariusz</th>
+                    <th>Status</th>
+                    <th>Sukces kroków</th>
+                    <th>Czas</th>
+                </tr>
+        
+                <tr>
+                    <td>Calendar integration</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>3/3</td>
+                    <td>2025-08-09T14:32:09.667501</td>
+                </tr>
+            
+                <tr>
+                    <td>Basic Conversation</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>3/3</td>
+                    <td>2025-08-09T14:32:18.165941</td>
+                </tr>
+            
+                <tr>
+                    <td>Habits - add & recall</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>3/3</td>
+                    <td>2025-08-09T14:32:21.942262</td>
+                </tr>
+            
+                <tr>
+                    <td>IoT Smart Home control</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>3/3</td>
+                    <td>2025-08-09T14:32:24.549692</td>
+                </tr>
+            
+                <tr>
+                    <td>Long-form content generation</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>3/3</td>
+                    <td>2025-08-09T14:32:27.626664</td>
+                </tr>
+            
+                <tr>
+                    <td>Notes plugin functionality</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>3/3</td>
+                    <td>2025-08-09T14:32:31.287666</td>
+                </tr>
+            
+                <tr>
+                    <td>Voice roundtrip</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>2/2</td>
+                    <td>2025-08-09T14:32:34.326787</td>
+                </tr>
+            
+                <tr>
+                    <td>Web search functionality</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>3/3</td>
+                    <td>2025-08-09T14:32:34.332402</td>
+                </tr>
+            
+                <tr>
+                    <td>Whisper input processing</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>2/2</td>
+                    <td>2025-08-09T14:32:39.519877</td>
+                </tr>
+            
+            </table>
+            
+            <h2>🔧 Szczegóły</h2>
+            <pre id="details"></pre>
+            
+            <script>
+                document.getElementById('details').textContent = JSON.stringify([
+  {
+    "name": "Calendar integration",
+    "start_time": "2025-08-09T14:32:09.667501",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:09.667584",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Wydarzenie \\\"Spotkanie projektowe\\\" zosta\u0142o dodane na jutro o 15:00, wszystko gotowe!\", \"command\": \"\", \"params\": {}, \"function_calls_executed\": true}"
+            },
+            "timestamp": 1754742734.942536
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:14.943625"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:14.943803",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Potrzebuj\u0119 jeszcze informacji, na kt\u00f3re dok\u0142adnie dni chcesz sprawdzi\u0107 te spotkania.\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742736.846613
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:16.847479"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:16.847632",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Podaj, prosz\u0119, dat\u0119 tego spotkania.\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742738.161109
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:18.162828"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:18.163153"
+  },
+  {
+    "name": "Basic Conversation",
+    "start_time": "2025-08-09T14:32:18.165941",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:18.166213",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Cze\u015b\u0107! Czuj\u0119 si\u0119 dobrze, dzi\u0119kuj\u0119 za pytanie. A ty, jak si\u0119 dzisiaj czujesz?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742739.32503
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:19.325523"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:19.325617",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Dzisiaj jest 9 sierpnia 2025.\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742740.748081
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:20.749086"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:20.749314",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Okej, spr\u00f3buj\u0119 co\u015b rozbawiaj\u0105cego... Dlaczego komputerowi zawsze jest zimno?  \\nBo pracuje na Windowsie!\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742741.940223
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:21.940686"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:21.940837"
+  },
+  {
+    "name": "Habits - add & recall",
+    "start_time": "2025-08-09T14:32:21.942262",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:21.942340",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"\u015awietny nawyk! Chcesz, \u017cebym Ci przypomina\u0142a o piciu wody co dwie godziny?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742742.886129
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:22.886863"
+      },
+      {
+        "step_index": 1,
+        "action": "restart_gaja",
+        "start_time": "2025-08-09T14:32:22.887096",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:32:22.887282"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:22.887428",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Trudno mi powiedzie\u0107, jakie masz nawyki zwi\u0105zane z wod\u0105, ale chcesz si\u0119 tym zaj\u0105\u0107?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742744.546648
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:24.548141"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:24.548242"
+  },
+  {
+    "name": "IoT Smart Home control",
+    "start_time": "2025-08-09T14:32:24.549692",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:24.549787",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Potrzebuj\u0119 jeszcze informacji, jakie \u015bwiat\u0142o chcesz w\u0142\u0105czy\u0107 \u2014 czy to konkretne, czy wszystkie w salonie?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742745.581915
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:25.583453"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:25.583756",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Ch\u0119tnie pomog\u0119, ale potrzebuj\u0119 wi\u0119cej informacji \u2014 chcesz, \u017cebym ustawi\u0142a temperatur\u0119 w domu, w samochodzie, czy mo\u017ce na innym urz\u0105dzeniu?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742746.708564
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:26.715055"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:26.715307",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Czy masz na my\u015bli urz\u0105dzenia w domu, czy mo\u017ce co\u015b innego?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742747.621912
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:27.623370"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:27.623731"
+  },
+  {
+    "name": "Long-form content generation",
+    "start_time": "2025-08-09T14:32:27.626664",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:27.626991",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Czy masz na my\u015bli konkretn\u0105 godzin\u0119, kiedy chcia\u0142by\u015b zacz\u0105\u0107 sw\u00f3j dzie\u0144 na przygotowania?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742748.644159
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:28.646459"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:28.646655",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Czy chcesz, \u017cebym to zrobi\u0142 teraz, czy mo\u017ce masz jakie\u015b konkretne punkty, kt\u00f3re chcia\u0142by\u015b, aby si\u0119 tam znalaz\u0142y?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742749.788334
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:29.789770"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:29.789924",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"W 2025 roku w IT dominuj\u0105 sztuczna inteligencja, wszechobecna automatyzacja, rozw\u00f3j technologii chmurowych i edge computing, a tak\u017ce coraz wi\u0119kszy nacisk na bezpiecze\u0144stwo cybernetyczne i prywatno\u015b\u0107 danych.\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742751.283628
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:31.284765"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:31.284971"
+  },
+  {
+    "name": "Notes plugin functionality",
+    "start_time": "2025-08-09T14:32:31.287666",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:31.287850",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Super pomys\u0142! Chcesz, \u017cebym zapisa\u0142a to jako notatk\u0119 w jakiej\u015b konkretnej li\u015bcie?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742752.163283
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:32.164430"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:32.164587",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Czy m\u00f3g\u0142by\u015b mi powiedzie\u0107, z kt\u00f3rej listy lub aplikacji chcesz zobaczy\u0107 notatki?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742753.27881
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:33.279946"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:33.280149",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Czy mo\u017cesz doprecyzowa\u0107, o jak\u0105 aplikacj\u0119 chodzi i jakie notatki masz na my\u015bli?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742754.32273
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:34.324199"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:34.324462"
+  },
+  {
+    "name": "Voice roundtrip",
+    "start_time": "2025-08-09T14:32:34.326787",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "audio",
+        "start_time": "2025-08-09T14:32:34.327005",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:32:34.327210"
+      },
+      {
+        "step_index": 1,
+        "action": "audio",
+        "start_time": "2025-08-09T14:32:34.327413",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:32:34.327611"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:34.329870"
+  },
+  {
+    "name": "Web search functionality",
+    "start_time": "2025-08-09T14:32:34.332402",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:34.332580",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Ch\u0119tnie pomog\u0119, ale wygl\u0105da na to, \u017ce nie mog\u0119 bezpo\u015brednio wyszuka\u0107 najnowszych informacji. Mo\u017ce chcesz, \u017cebym opowiedzia\u0142 ci o tym, co ju\u017c wiem na temat sztucznej inteligencji?\", \"command\": \"\", \"params\": {}, \"function_calls_executed\": true}"
+            },
+            "timestamp": 1754742756.389317
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:36.390213"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:36.390368",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Jutro w Warszawie b\u0119dzie od 6 do 11 stopni, z przewidywan\u0105 delikatn\u0105 zmian\u0105 pogody i niskim wiatrem. Mo\u017cesz si\u0119 spodziewa\u0107 raczej ch\u0142odnego i spokojnego dnia.\", \"command\": \"\", \"params\": {}, \"function_calls_executed\": true}"
+            },
+            "timestamp": 1754742758.274035
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:38.274965"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:32:38.275277",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": {
+            "success": true,
+            "response": {
+              "type": "normal_response",
+              "response": "{\"text\": \"Czy chcesz, \u017cebym sprawdzi\u0142a kurs dolara w Polsce, czy mo\u017ce w innym kraju?\", \"command\": \"\", \"params\": {}}"
+            },
+            "timestamp": 1754742759.516581
+          }
+        },
+        "error": null,
+        "end_time": "2025-08-09T14:32:39.517360"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:39.517566"
+  },
+  {
+    "name": "Whisper input processing",
+    "start_time": "2025-08-09T14:32:39.519877",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "audio",
+        "start_time": "2025-08-09T14:32:39.520034",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:32:39.520175"
+      },
+      {
+        "step_index": 1,
+        "action": "audio",
+        "start_time": "2025-08-09T14:32:39.520366",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:32:39.520490"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:32:39.520659"
+  }
+], null, 2);
+            </script>
+        </body>
+        </html>
+        

@@ -1,0 +1,31 @@
+meta:
+  name: "Basic Conversation"
+  tags: ["conversation", "basic", "text"]
+
+steps:
+  - type: "text"
+    message: "Cześć! Jak się masz?"
+    expect:
+      action: "greeting_response"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "cześć"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Jaka jest dzisiaj data?"
+    expect:
+      action: "date_query"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "2025"
+        - kind: "semantic_ok"
+
+  - type: "text"
+    message: "Powiedz mi żart"
+    expect:
+      action: "humor_response"
+      assertions:
+        - kind: "semantic_ok"

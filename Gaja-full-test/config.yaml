@@ -1,0 +1,26 @@
+gaja:
+  base_url: "http://localhost:8001"
+  api_key: "${GAJA_API_KEY}"
+
+voice:
+  tts_provider: "openai"
+  tts_model: "tts-1"  # zgodnie z kodem API routes.py
+  tts_voice: "alloy"
+  sample_rate: 16000
+  output_format: "wav"
+
+grader:
+  lmstudio_base_url: "http://localhost:1234/v1/chat/completions"
+  model: "gpt-oss-20b"
+  max_tokens: 512
+  temperature: 0.1
+
+report:
+  output_path: "results/report.html"
+  fail_threshold: 8.0
+
+runtime:
+  seed: 42
+  default_timeout_s: 45
+  between_steps_sleep_ms: 300
+  allow_parallel: false

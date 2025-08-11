@@ -1,0 +1,22 @@
+Oceń następującą interakcję użytkownika z asystentem AI:
+
+**Wejście użytkownika:**
+{{ user_input }}
+
+**Odpowiedź asystenta:**
+{{ assistant_text }}
+
+**Dodatkowe dane kontekstowe:**
+{{ meta_json }}
+
+Oceń tę interakcję w skali 0-10 uwzględniając:
+- Czy asystent zrozumiał intencję użytkownika
+- Czy odpowiedź jest merytoryczznie poprawna  
+- Czy styl komunikacji jest naturalny i pomocny
+- Czy wykonano wszystkie wymagane akcje
+
+Zwróć ocenę w formacie JSON:
+{
+  "ocena": <0-10>,
+  "uwagi": "<konkretne uwagi do poprawy lub pochwały>"
+}

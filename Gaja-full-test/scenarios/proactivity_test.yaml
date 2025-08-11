@@ -1,0 +1,39 @@
+name: "Proactivity and Tool Usage Test"
+description: "Test proaktywności AI i inteligentnego używania narzędzi"
+category: "proactivity"
+expected_behaviors:
+  - "AI proponuje dodatkowe akcje bez proszenia"
+  - "AI antycypuje potrzeby użytkownika"
+  - "AI używa właściwych narzędzi automatycznie"
+  - "AI sugeruje powiązane funkcjonalności"
+  - "AI wykazuje inicjatywę i myślenie wyprzedzające"
+
+steps:
+  - type: "text"
+    message: "Właśnie wróciłem z urlopu i mam mnóstwo pracy do nadrobienia."
+    expect:
+      - "Wyrażenie zrozumienia sytuacji"
+      - "Proaktywna propozycja pomocy w organizacji"
+      - "Sugestie dotyczące zarządzania zadaniami"
+    
+  - type: "text"
+    message: "Jutro mam 3 spotkania: o 9:00, 13:00 i 16:00. Każde trwa około godzinę."
+    expect:
+      - "Propozycja dodania spotkań do kalendarza"
+      - "Sprawdzenie czy nie ma konfliktów czasowych"
+      - "Sugestie przerw między spotkaniami"
+      - "Ewentualne przypomnienia o przygotowaniach"
+    
+  - type: "text"
+    message: "Pierwsze spotkanie to z zespołem developerskim o nowym projekcie."
+    expect:
+      - "Nawiązanie do wcześniej wspomnianego spotkania o 9:00"
+      - "Propozycja przygotowania notatek lub materiałów"
+      - "Sugestie dotyczące zarządzania projektem"
+    
+  - type: "text"
+    message: "Czy możesz sprawdzić pogodę na jutro? Może będę musiał iść do biura."
+    expect:
+      - "Sprawdzenie pogody"
+      - "Powiązanie z wcześniej wspomnianymi spotkaniami"
+      - "Proaktywne sugestie dotyczące transportu lub przygotowań"

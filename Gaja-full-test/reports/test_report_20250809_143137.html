@@ -1,0 +1,420 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>GAJA Test Report</title>
+            <meta charset="utf-8">
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .success { color: green; }
+                .error { color: red; }
+                .warning { color: orange; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <h1>🧪 GAJA Test Report</h1>
+            <p><strong>Timestamp:</strong> 2025-08-09 14:31:37</p>
+            <p><strong>Scenariusze:</strong> 2/9 pomyślne</p>
+            
+            <h2>📋 Wyniki scenariuszy</h2>
+            <table>
+                <tr>
+                    <th>Scenariusz</th>
+                    <th>Status</th>
+                    <th>Sukces kroków</th>
+                    <th>Czas</th>
+                </tr>
+        
+                <tr>
+                    <td>Calendar integration</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>0/3</td>
+                    <td>2025-08-09T14:31:37.450322</td>
+                </tr>
+            
+                <tr>
+                    <td>Basic Conversation</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>0/3</td>
+                    <td>2025-08-09T14:31:37.476999</td>
+                </tr>
+            
+                <tr>
+                    <td>Habits - add & recall</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>1/3</td>
+                    <td>2025-08-09T14:31:37.499100</td>
+                </tr>
+            
+                <tr>
+                    <td>IoT Smart Home control</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>0/3</td>
+                    <td>2025-08-09T14:31:37.511202</td>
+                </tr>
+            
+                <tr>
+                    <td>Long-form content generation</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>0/3</td>
+                    <td>2025-08-09T14:31:37.527421</td>
+                </tr>
+            
+                <tr>
+                    <td>Notes plugin functionality</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>0/3</td>
+                    <td>2025-08-09T14:31:37.543934</td>
+                </tr>
+            
+                <tr>
+                    <td>Voice roundtrip</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>2/2</td>
+                    <td>2025-08-09T14:31:37.564166</td>
+                </tr>
+            
+                <tr>
+                    <td>Web search functionality</td>
+                    <td class="error">❌ Błąd</td>
+                    <td>0/3</td>
+                    <td>2025-08-09T14:31:37.572541</td>
+                </tr>
+            
+                <tr>
+                    <td>Whisper input processing</td>
+                    <td class="success">✅ Sukces</td>
+                    <td>2/2</td>
+                    <td>2025-08-09T14:31:37.585650</td>
+                </tr>
+            
+            </table>
+            
+            <h2>🔧 Szczegóły</h2>
+            <pre id="details"></pre>
+            
+            <script>
+                document.getElementById('details').textContent = JSON.stringify([
+  {
+    "name": "Calendar integration",
+    "start_time": "2025-08-09T14:31:37.450322",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.450409",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.465661"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.465875",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.469312"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.469506",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.473441"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.0,
+    "end_time": "2025-08-09T14:31:37.473856"
+  },
+  {
+    "name": "Basic Conversation",
+    "start_time": "2025-08-09T14:31:37.476999",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.477125",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.481161"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.481869",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.489907"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.492093",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.496805"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.0,
+    "end_time": "2025-08-09T14:31:37.497209"
+  },
+  {
+    "name": "Habits - add & recall",
+    "start_time": "2025-08-09T14:31:37.499100",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.499405",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.503092"
+      },
+      {
+        "step_index": 1,
+        "action": "restart_gaja",
+        "start_time": "2025-08-09T14:31:37.503333",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:31:37.503423"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.503508",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.507914"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.3333333333333333,
+    "end_time": "2025-08-09T14:31:37.509697"
+  },
+  {
+    "name": "IoT Smart Home control",
+    "start_time": "2025-08-09T14:31:37.511202",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.511310",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.515221"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.515407",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.518546"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.518703",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.523004"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.0,
+    "end_time": "2025-08-09T14:31:37.525833"
+  },
+  {
+    "name": "Long-form content generation",
+    "start_time": "2025-08-09T14:31:37.527421",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.527521",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.532986"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.533193",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.536416"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.536617",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.542269"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.0,
+    "end_time": "2025-08-09T14:31:37.542482"
+  },
+  {
+    "name": "Notes plugin functionality",
+    "start_time": "2025-08-09T14:31:37.543934",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.544012",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.547811"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.549057",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.553574"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.554052",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.560068"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.0,
+    "end_time": "2025-08-09T14:31:37.560866"
+  },
+  {
+    "name": "Voice roundtrip",
+    "start_time": "2025-08-09T14:31:37.564166",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "audio",
+        "start_time": "2025-08-09T14:31:37.564371",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:31:37.567306"
+      },
+      {
+        "step_index": 1,
+        "action": "audio",
+        "start_time": "2025-08-09T14:31:37.567934",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:31:37.568722"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:31:37.569799"
+  },
+  {
+    "name": "Web search functionality",
+    "start_time": "2025-08-09T14:31:37.572541",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.572764",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.576625"
+      },
+      {
+        "step_index": 1,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.576803",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.579880"
+      },
+      {
+        "step_index": 2,
+        "action": "text",
+        "start_time": "2025-08-09T14:31:37.580464",
+        "success": false,
+        "response": null,
+        "error": "HTTP 400: {\"detail\":\"Query is required\"}",
+        "end_time": "2025-08-09T14:31:37.583888"
+      }
+    ],
+    "success": false,
+    "error": null,
+    "success_rate": 0.0,
+    "end_time": "2025-08-09T14:31:37.584051"
+  },
+  {
+    "name": "Whisper input processing",
+    "start_time": "2025-08-09T14:31:37.585650",
+    "steps": [
+      {
+        "step_index": 0,
+        "action": "audio",
+        "start_time": "2025-08-09T14:31:37.585742",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:31:37.585815"
+      },
+      {
+        "step_index": 1,
+        "action": "audio",
+        "start_time": "2025-08-09T14:31:37.585869",
+        "success": true,
+        "response": null,
+        "error": null,
+        "end_time": "2025-08-09T14:31:37.585920"
+      }
+    ],
+    "success": true,
+    "error": null,
+    "success_rate": 1.0,
+    "end_time": "2025-08-09T14:31:37.585990"
+  }
+], null, 2);
+            </script>
+        </body>
+        </html>
+        

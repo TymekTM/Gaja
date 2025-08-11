@@ -1,0 +1,38 @@
+name: "Error Handling and Recovery Test"
+description: "Test obsługi błędów i odzyskiwania po problemach"
+category: "error_handling"
+expected_behaviors:
+  - "AI gracefully obsługuje błędy"
+  - "AI oferuje alternatywne rozwiązania"
+  - "AI nie zostawia użytkownika bez pomocy"
+  - "AI informuje o problemach w zrozumiały sposób"
+  - "AI próbuje różnych podejść do rozwiązania problemu"
+
+steps:
+  - type: "text"
+    message: "Sprawdź prognozę pogody dla miasta które nie istnieje: Nieistniejące Miasto."
+    expect:
+      - "Rozpoznanie że miasto nie istnieje"
+      - "Uprzejme poinformowanie o problemie"
+      - "Propozycja alternatywnych rozwiązań"
+    
+  - type: "text"
+    message: "Dodaj wydarzenie do kalendarza na datę 32 grudnia 2024."
+    expect:
+      - "Rozpoznanie nieprawidłowej daty"
+      - "Wyjaśnienie problemu w sposób zrozumiały"
+      - "Propozycja poprawnej daty lub pytanie o uściślenie"
+    
+  - type: "text"
+    message: "Wyszukaj informacje o 'asdfghjkl qwertyuiop zxcvbnm' w internecie."
+    expect:
+      - "Próba wyszukania nawet dla bezsensownego zapytania"
+      - "Informacja o braku wyników w sposób pomocny"
+      - "Sugestie jak poprawić wyszukiwanie"
+    
+  - type: "text"
+    message: "Wykonaj akcję XYZ123 która nie istnieje w systemie."
+    expect:
+      - "Rozpoznanie nieznanej komendy/akcji"
+      - "Pomocne wyjaśnienie dostępnych opcji"
+      - "Propozycja podobnych lub alternatywnych działań"

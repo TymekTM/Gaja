@@ -1,0 +1,31 @@
+meta:
+  name: "Habits - add & recall"
+  tags: ["habits", "memory", "persistence"]
+
+steps:
+  - type: "text"
+    message: "Dodaj nawyk: pij wodę co 2 godziny"
+    expect:
+      action: "habit_add"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "dodałem"
+        - kind: "semantic_ok"
+
+  - type: "action"
+    action: "restart_gaja"
+    expect:
+      action: "service_restarted"
+      assertions:
+        - kind: "effect_ok"
+
+  - type: "text"
+    message: "Jakie mam nawyki związane z wodą?"
+    expect:
+      action: "habit_recall"
+      assertions:
+        - kind: "contains"
+          target: "assistant_text"
+          value: "wod"
+        - kind: "semantic_ok"

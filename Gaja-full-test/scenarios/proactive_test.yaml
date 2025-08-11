@@ -1,0 +1,32 @@
+meta:
+  name: "Proactive Assistant Test"
+  description: "Test proaktywności AI - czy asystent sam podejmuje inicjatywę"
+  expected_behaviors:
+    - "AI powinno zaproponować dodatkowe akcje bez proszenia"
+    - "AI powinno antycypować potrzeby użytkownika"
+    - "AI powinno łączyć informacje i wyciągać wnioski" 
+    - "AI powinno sugerować optymalizacje i usprawnienia"
+    - "AI powinno działać nie tylko reaktywnie"
+
+steps:
+  - type: text
+    message: "Jutro lecę do Warszawy na konferencję tech. Lot o 8:00 rano."
+
+  - type: text
+    message: "Konferencja trwa 2 dni, kończy się w czwartek wieczorem."
+    
+  - type: text
+    message: "Muszę też spotkać się z klientem podczas pobytu w Warszawie."
+
+  - type: text
+    message: "Dzięki za pomoc!"
+
+expected_results:
+  - criteria: "proactivity"
+    description: "AI powinno zaproponować sprawdzenie pogody w Warszawie"
+  - criteria: "proactivity" 
+    description: "AI powinno zasugerować ustawienie budzika na wcześniejsząporę"
+  - criteria: "proactivity"
+    description: "AI powinno zaproponować zaplanowanie spotkania z klientem"
+  - criteria: "proactivity"
+    description: "AI powinno zasugerować sprawdzenie transportu z lotniska"
